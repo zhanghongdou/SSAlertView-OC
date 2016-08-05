@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aPA-4h-vot">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ZK8-Ef-hGx">
+            <objects>
+                <viewController id="aPA-4h-vot" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MSN-Gu-5BQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jxl-Ds-OzU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ERE-VN-sp7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6B-Or-Nkd">
+                                <rect key="frame" x="200" y="170" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ItQ-6H-MbN"/>
+                                    <constraint firstAttribute="height" constant="50" id="NgD-3Z-mFe"/>
+                                </constraints>
+                                <state key="normal" title="error"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="aPA-4h-vot" eventType="touchUpInside" id="TDF-IK-19h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SF-xk-PSu">
+                                <rect key="frame" x="200" y="270" width="200" height="50"/>
+                                <state key="normal" title="Success"/>
+                                <connections>
+                                    <action selector="btnClick2:" destination="aPA-4h-vot" eventType="touchUpInside" id="vAf-Li-U1B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMX-dh-fD8">
+                                <rect key="frame" x="200" y="370" width="200" height="50"/>
+                                <state key="normal" title="Warning"/>
+                                <connections>
+                                    <action selector="btnClick3:" destination="aPA-4h-vot" eventType="touchUpInside" id="Sim-pu-ijc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhJ-We-ax4">
+                                <rect key="frame" x="200" y="470" width="200" height="50"/>
+                                <state key="normal" title="Default"/>
+                                <connections>
+                                    <action selector="btnClick4:" destination="aPA-4h-vot" eventType="touchUpInside" id="3fj-Ld-adl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psg-FQ-bQo">
+                                <rect key="frame" x="200" y="570" width="200" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnClick5:" destination="aPA-4h-vot" eventType="touchUpInside" id="dTh-cl-EQM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hhJ-We-ax4" firstAttribute="top" secondItem="yMX-dh-fD8" secondAttribute="bottom" constant="50" id="2CZ-4l-x8q"/>
+                            <constraint firstItem="4SF-xk-PSu" firstAttribute="height" secondItem="J6B-Or-Nkd" secondAttribute="height" id="2wM-9s-Xcb"/>
+                            <constraint firstItem="yMX-dh-fD8" firstAttribute="top" secondItem="4SF-xk-PSu" secondAttribute="bottom" constant="50" id="3UI-65-pMz"/>
+                            <constraint firstItem="yMX-dh-fD8" firstAttribute="centerX" secondItem="J6B-Or-Nkd" secondAttribute="centerX" id="3qC-LS-ST5"/>
+                            <constraint firstItem="4SF-xk-PSu" firstAttribute="top" secondItem="J6B-Or-Nkd" secondAttribute="bottom" constant="50" id="6FD-KE-1Mb"/>
+                            <constraint firstItem="J6B-Or-Nkd" firstAttribute="top" secondItem="MSN-Gu-5BQ" secondAttribute="bottom" constant="150" id="817-Je-Jpb"/>
+                            <constraint firstItem="hhJ-We-ax4" firstAttribute="centerX" secondItem="yMX-dh-fD8" secondAttribute="centerX" id="Fcx-TS-vSj"/>
+                            <constraint firstItem="yMX-dh-fD8" firstAttribute="width" secondItem="J6B-Or-Nkd" secondAttribute="width" id="LSe-5B-Wex"/>
+                            <constraint firstItem="4SF-xk-PSu" firstAttribute="centerX" secondItem="J6B-Or-Nkd" secondAttribute="centerX" id="LVd-HB-jfl"/>
+                            <constraint firstItem="4SF-xk-PSu" firstAttribute="width" secondItem="J6B-Or-Nkd" secondAttribute="width" id="N02-ZN-XN2"/>
+                            <constraint firstItem="J6B-Or-Nkd" firstAttribute="centerX" secondItem="ERE-VN-sp7" secondAttribute="centerX" id="XeP-A1-cLD"/>
+                            <constraint firstItem="yMX-dh-fD8" firstAttribute="height" secondItem="J6B-Or-Nkd" secondAttribute="height" id="eot-q0-OEi"/>
+                            <constraint firstItem="hhJ-We-ax4" firstAttribute="width" secondItem="yMX-dh-fD8" secondAttribute="width" id="fSH-dh-eGC"/>
+                            <constraint firstItem="psg-FQ-bQo" firstAttribute="top" secondItem="hhJ-We-ax4" secondAttribute="bottom" constant="50" id="hXD-vP-36U"/>
+                            <constraint firstItem="hhJ-We-ax4" firstAttribute="height" secondItem="yMX-dh-fD8" secondAttribute="height" id="jDp-Eu-nUl"/>
+                            <constraint firstItem="psg-FQ-bQo" firstAttribute="centerX" secondItem="hhJ-We-ax4" secondAttribute="centerX" id="sSc-mq-nyB"/>
+                            <constraint firstItem="psg-FQ-bQo" firstAttribute="width" secondItem="hhJ-We-ax4" secondAttribute="width" id="v5Z-bP-JMS"/>
+                            <constraint firstItem="psg-FQ-bQo" firstAttribute="height" secondItem="hhJ-We-ax4" secondAttribute="height" id="w2k-Pw-DUZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HDM-H1-WDj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="373"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_SSAlertView2 {
+  umbrella header "Pods-SSAlertView2-umbrella.h"
+
+  export *
+  module * { export * }
+}
