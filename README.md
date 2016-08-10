@@ -1,2 +1,33 @@
 # SSAlertView-OC
-封装了一个根据内容自动约束的alertView，希望大家能够喜欢，并给予指点
+封装了一个swift版本的根据内容自动约束的alertView，希望大家能够喜欢，并给予指点
+
+<html>
+<body>
+<h2>什么是SSAlertView-OC</h2>
+<p>在日常我们写程序的时候往往都是离不开弹窗的，但是系统的弹窗又显的特别单调，所以，小编在不是很忙的时候封装了一个弹窗，也就是SSAlertView-OC，它可以随着开发者的需要以不同的形式显示，同时，又能够根据内容的大小进行自动调整，而开发者只需要简单的代码就能实现View的弹出</p>
+
+<h2>效果图展示</h2>
+
+<h3>效果图1</h3>
+<p><img src="picture/346D2308-E0E8-4A59-86E3-33294560EFBB.png"/></p>
+
+<h3>效果图2</h3>
+<p><img src="picture/A92A34A2-1C29-4138-8525-9BEA796EEF49.png"/></p>
+<h3>效果图3</h3>
+<p><img src="picture/CBF51BA1-0143-4424-B3DE-83EC23169CB0.png"/></p>
+<h3>效果图4</h3>
+<p><img src="picture/58B3726A-799A-4C43-B67B-6B52F6D8087E.png"/></p>
+<h3>效果图5</h3>
+<p><img src="picture/5AE7CA22-B4B5-4FE7-820A-C7C816A1F8F6.png"/></p>
+
+<h2>使用方法</h2>
+<p>SSAlertView *alertView = [[SSAlertView alloc]initWithTitle:@"温馨提示" AlertMessage:@"请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意请注意" cancelButtonTitle:@"取消" otherButtonTitles:@[@"按钮1", @"按钮2"]];<br/>
+    alertView.mode = SSAlertViewModeError;<br/>
+    alertView.leaveModel = SSAlertLeaveModeRight;<br/>
+    alertView.clickBlock = ^(NSInteger index) {<br/>
+        NSLog(@"点击了按钮-----%ld", index);<br/>
+    };<br/>
+    [alertView show];</p>
+</body>
+
+</html>
